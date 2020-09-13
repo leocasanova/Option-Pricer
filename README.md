@@ -22,7 +22,7 @@ Within the binomial model, the price H(n, i) at each node (n, i) of a European o
 
 ## At the expiry date N
 
-H(N, i) = h(S(N, i)) for each node i = 0, 1, ..., N
+	H(N, i) = h(S(N, i)) for each node i = 0, 1, ..., N
 
 ## If H(n + 1, i) is already known at each node i = 0, 1, ..., n + 1 for some n = 0, ..., N - 1 then
 	
