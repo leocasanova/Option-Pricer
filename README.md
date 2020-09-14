@@ -4,20 +4,28 @@ Pricing options (European, American, Asian and Digital) with different models su
 
 # Definitions
 K: strike price
+
 S: underlying price
+
 r: risk-free interest rate
+
 T: expiry date (maturity)
+
 t: time
+
 N: number of iterations
+
 sigma: volatility
 
 # Binomial Model
 
 In this model, the stock prices evolve randomly by moving up by a factor 1 + U or down by 1 + D independently at each time step starting from the spot price S(0).
 As a result the stock price becomes:
+
 S(n, i) = S(0) * (1 + U)^i * (1 + D)^(n - i) where S(0) > 0, U > D > - 1 and n >= i >= 0.
 
-There is also a risk-free security growing by a factor 1 + R > 0 during each time step
+There is also a risk-free security growing by a factor 1 + R > 0 during each time step.
+
 Within the binomial model, the price H(n, i) at each node (n, i) of a European option with the expiry date N and payoff h(S(N)) can be computed by using the Cox-Ross-Rubinstein (CRR) procedure which proceeds by backward induction :
 
 ### At the expiry date N
